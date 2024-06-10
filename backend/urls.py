@@ -8,4 +8,5 @@ from app import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', views.post_list, name='post-list'),
+    # path('api/<int:id>', views.view_details)
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
